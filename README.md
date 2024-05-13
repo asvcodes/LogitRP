@@ -14,23 +14,19 @@ The dataset used for training and evaluation is the "Rain in Australia" dataset 
 
 ## Approach
 
-### 1. Exploratory Data Analysis (EDA)
-
-Exploratory data analysis is performed to understand the dataset, visualize the distributions of features, and identify any patterns or correlations. This step helps in preprocessing and feature engineering.
-
-### 2. Preprocessing
+### 1. Preprocessing
 
 Data preprocessing involves handling missing values, scaling numeric features, and encoding categorical variables. Missing values are filled or imputed, numeric features are scaled to a (0,1) range, and categorical columns are encoded as one-hot vectors.
 
-### 3. Model Training
+### 2. Model Training
 
 Logistic regression model is trained using Scikit-learn's `LogisticRegression` class. The model is trained on the training dataset and tuned using the validation set.
 
-### 4. Model Evaluation
+### 3. Model Evaluation
 
 The trained model is evaluated using the validation set to assess its performance in predicting rain. Evaluation metrics such as accuracy, precision, recall, and F1-score are calculated to measure the model's effectiveness.
 
-### 5. Prediction
+### 4. Prediction
 
 Once the model is trained and evaluated, it can be used to make predictions on new data. Given today's weather data, the model predicts whether it will rain tomorrow at the specified location.
 
